@@ -22,7 +22,7 @@ jobs:
       - name: Run application test
         run: |
           echo "Checking application..."
-          test -f index.html
+          test -f  DOES-NOT-EXIST.html
           echo "Application test passed!"
 
       - name: Build
