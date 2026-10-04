@@ -1,12 +1,4 @@
-name: CI
-
-on:
-  push:
-    branches:
-      - develop
-      - release
-      - master
-
+  GNU nano 9.2                                   ci.yml
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -24,8 +16,9 @@ jobs:
           test -f index.
 html
           echo "Application test passed!"
-
       - name: Build
         run: |
           echo "Building application..."
           cat index.html
+
+              
