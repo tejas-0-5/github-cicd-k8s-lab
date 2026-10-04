@@ -16,6 +16,7 @@ jobs:
           github.event.workflow_run.head_branch == 'develop' }}
 
     runs-on: ubuntu-latest
+    environment: DEV
 
     steps:
       - name: Checkout repository
